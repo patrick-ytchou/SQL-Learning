@@ -17,7 +17,6 @@ SELECT Num,
 ) a
 WHERE a.ConsecutiveNums >= 3;
 
-
 SELECT @count:=0, @record:=(SELECT Num FROM Logs LIMIT 0,1)
 ## In this subquery, the variable count is set to be zero, and the variable record is set to be the first value in the Num column.
 ## Since this table is set, these values are fed into the CASE statement above so that those values can accumulate and detect.
